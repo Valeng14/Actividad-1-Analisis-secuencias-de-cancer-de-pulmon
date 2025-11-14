@@ -37,6 +37,23 @@ Este proyecto utiliza datos simulados basados en el perfil de adenocarcinoma pul
 - Análisis bioinformatico de genes
 - Visualizaciones: Volcano plots, heatmaps, diagramas de enriquecimiento
 
+## Resultados
+
+### Expresión Diferencial
+El análisis identificó **45 genes diferencialmente expresados** (FDR < 0.05) entre tejido tumoral y normal. Los genes más significativamente sobreexpresados incluyen:
+
+- **EGFR** (log2FC: 3.45, p-ajustado: 2.1e-13)
+- **KRAS** (log2FC: 3.21, p-ajustado: 5.6e-10)  
+- **MYC** (log2FC: 3.32, p-ajustado: 3.2e-09)
+- **CDKN2A** (log2FC: 3.10, p-ajustado: 8.9e-08)
+
+## 📈 Visualizaciones
+
+El proyecto incluye las siguientes visualizaciones:
+- `volcano_plot.png` - Genes diferencialmente expresados
+- `heatmap_top_genes.png` - Patrones de expresión
+- `pca_plot.png` - Agrupamiento de muestras
+
 ## 👥 Contribuyentes
 - Luisa Michel Riascos Garcia
 - Dariem Hernandez Díaz
