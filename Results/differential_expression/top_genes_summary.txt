@@ -1,0 +1,15 @@
+=== RESUMEN ANÁLISIS EXPRESIÓN DIFERENCIAL ===
+Fecha: 2024-01-15
+Muestras analizadas: 8 (4 tumor, 4 normal)
+Genes analizados: 500
+
+Genes más sobreexpresados (log2FC > 2, padj < 0.05):
+1. EGFR - log2FC: 3.45, p-ajustado: 2.1e-13
+2. KRAS - log2FC: 3.21, p-ajustado: 5.6e-10
+3. MYC - log2FC: 3.32, p-ajustado: 3.2e-09
+4. CDKN2A - log2FC: 3.10, p-ajustado: 8.9e-08
+
+Total genes significativos: 45
+- Sobreexpresados: 38
+- Reprimidos: 7
+- No significativos: 455
