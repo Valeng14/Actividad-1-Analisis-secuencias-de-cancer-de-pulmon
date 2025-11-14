@@ -38,7 +38,9 @@ Este proyecto utiliza datos simulados basados en el perfil de adenocarcinoma pul
 - Visualizaciones: Volcano plots, heatmaps, diagramas de enriquecimiento
 
 ## 👥 Contribuyentes
-
+Luisa Michel Riascos Garcia
+Dariem Hernandez Díaz
+Valentina Naecáez Gaitán 
 
 ## 📚 Referencias
 - [TCGA Lung Adenocarcinoma Study - Nature 2014](https://www.nature.com/articles/nature11404)
