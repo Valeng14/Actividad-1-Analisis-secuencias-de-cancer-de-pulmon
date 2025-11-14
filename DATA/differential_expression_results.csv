@@ -1,0 +1,9 @@
+gene_id,log2FoldChange,pvalue,padj,regulation
+EGFR,3.45,1.2e-15,2.1e-13,up
+KRAS,3.21,3.4e-12,5.6e-10,up
+TP53,1.89,2.3e-08,1.4e-06,up
+CDKN2A,3.10,5.6e-10,8.9e-08,up
+PTEN,0.85,0.023,0.045,up
+TTN,-0.45,0.310,0.520,ns
+BRCA1,-0.78,0.089,0.210,ns
+MYC,3.32,8.9e-11,3.2e-09,up
