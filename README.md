@@ -47,12 +47,16 @@ El análisis identificó **45 genes diferencialmente expresados** (FDR < 0.05) e
 - **MYC** (log2FC: 3.32, p-ajustado: 3.2e-09)
 - **CDKN2A** (log2FC: 3.10, p-ajustado: 8.9e-08)
 
-## 📈 Visualizaciones
+## Visualizaciones
 
 El proyecto incluye las siguientes visualizaciones:
 - `volcano_plot.png` - Genes diferencialmente expresados
 - `heatmap_top_genes.png` - Patrones de expresión
 - `pca_plot.png` - Agrupamiento de muestras
+
+## Interpretación
+
+Los resultados son consistentes con hallazgos reportados en la literatura para adenocarcinoma pulmonar, mostrando sobreexpresión de oncogenes clave (EGFR, KRAS, MYC) y alteración en pathways de señalización críticos para la progresión tumoral.
 
 ## 👥 Contribuyentes
 - Luisa Michel Riascos Garcia
