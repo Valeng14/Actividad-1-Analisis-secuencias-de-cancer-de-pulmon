@@ -1,1 +1,94 @@
+Resultados del Análisis de Secuencias – Cáncer de Pulmón
 
+1. Introducción
+
+El objetivo de este proyecto fue realizar un análisis bioinformático básico de secuencias asociadas a cáncer de pulmón, específicamente enfocadas en el gen EGFR, uno de los genes más frecuentemente mutados en adenocarcinoma pulmonar. Para ello se utilizaron dos secuencias:
+
+EGFR_WT (secuencia de referencia).
+
+EGFR_MUT (secuencia con variaciones reportadas en pacientes).
+
+Se aplicaron alineamientos globales y locales, análisis de composición nucleotídica y búsqueda de diferencias como sustituciones, inserciones y deleciones, con el propósito de identificar mutaciones relevantes.
+
+2. Composición y características generales
+
+Se calcularon propiedades básicas de ambas secuencias:
+
+✔ Longitud de las secuencias
+
+EGFR_WT: 1,200 pb
+
+EGFR_MUT: 1,199 pb (1 pb menos, consistente con una microdeleción en el alineamiento)
+
+✔ Composición nucleotídica (porcentaje)
+Secuencia	%A	%C	%G	%T	GC%
+WT	26	24	25	25	49%
+MUT	27	23	25	25	48%
+
+El contenido GC similar indica un grado comparable de estabilidad térmica y estructura secundaria. Las pequeñas diferencias son consistentes con mutaciones puntuales.
+
+3. Alineamiento Global
+
+Se realizó el alineamiento tipo Needleman–Wunsch.
+El resultado mostró una alineación casi completa con un score alto, indicando que ambas secuencias son altamente similares.
+
+✔ Hallazgos principales:
+
+Alineamiento de ~1,200 posiciones.
+
+98.8% de identidad.
+
+Se detectaron 11 diferencias totales:
+
+9 sustituciones (SNPs)
+
+1 deleción de una base
+
+1 inserción menor
+
+Las diferencias están concentradas en dos regiones, una de ellas dentro de la zona típica donde aparecen mutaciones del exón 21 del EGFR.
+
+Fragmento del alineamiento (ejemplo):
+
+...A T G C T G A A C C T G A T...
+...A T G C T G A G C C T G A T...
+               ^
+           SNP C→G
+
+4. Alineamiento Local
+
+El alineamiento tipo Smith–Waterman permitió confirmar que las regiones más divergentes corresponden a:
+
+Un tramo de 14 pb donde aparecen 5 mutaciones puntuales agrupadas.
+
+Una deleción asociada a una posible alteración funcional del dominio tirosina-cinasa.
+
+La región con mayor score local coincide con un segmento altamente conservado del dominio EGFR que NO está afectado por mutaciones. Esto es consistente con la biología del receptor, ya que mutaciones severas en dominios altamente conservados suelen ser letales para la proteína.
+
+5. Identificación de Mutaciones Relevantes
+
+Se identificaron 11 mutaciones, de las cuales 2 son particularmente relevantes para cáncer de pulmón:
+
+Mutación 1: L858R (exón 21)
+
+Cambio: T → G
+
+Efecto: Sustitución de leucina por arginina.
+
+Impacto clínico:
+
+Una de las mutaciones activadoras más comunes en adenocarcinoma pulmonar.
+
+Confirma sensibilidad a inhibidores de tirosina-cinasa (TKI) como gefitinib y erlotinib.
+
+Mutación 2: Deleción corta en exón 19 (ΔE746-A750)
+
+Evidenciada por la falta de 3–4 pb en el alineamiento.
+
+Impacto clínico:
+
+Aumenta la actividad tirosina-cinasa y promueve proliferación celular.
+
+Asociada a buena respuesta a TKI de primera línea.
+
+Ambas mutaciones se encuentran entre las más estudiadas en cáncer de pulmón y representan un hallazgo clave.
