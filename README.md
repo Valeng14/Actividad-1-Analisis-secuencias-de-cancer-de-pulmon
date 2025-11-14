@@ -14,3 +14,19 @@ Analizar secuencias asociadas al cáncer de pulmón para identificar patrones, v
 - Validar los hallazgos del estudio seminal de TCGA (Nature 2014)
 - Crear un flujo de trabajo reproducible de análisis de RNA-Seq
 
+
+
+
+
+
+## Resultados Esperados
+- Lista de genes diferencialmente expresados
+- Análisis bioinformatico de genes
+- Visualizaciones: Volcano plots, heatmaps, diagramas de enriquecimiento
+
+## 👥 Contribuyentes
+
+
+## 📚 Referencias
+- [TCGA Lung Adenocarcinoma Study - Nature 2014](https://www.nature.com/articles/nature11404)
+- [TCGAbiolinks Documentation](https://bioconductor.org/packages/release/bioc/html/TCGAbiolinks.html)
