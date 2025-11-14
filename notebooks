@@ -1,1 +1,18 @@
+# Notebooks del Proyecto
+
+Este directorio contiene los cuadernos Jupyter utilizados para realizar el análisis bioinformático de secuencias asociadas al cáncer de pulmón.
+
+## Contenido
+
+### 01_carga_y_exploracion_de_secuencias.ipynb
+Carga archivos FASTA y realiza análisis preliminares de longitud, composición de bases y %GC.
+
+### 02_alineamiento_global_y_local.ipynb
+Implementa alineamientos pairwise usando Needleman–Wunsch y Smith–Waterman.
+
+### 03_identificacion_de_mutaciones.ipynb
+Detecta posiciones diferentes entre secuencias e identifica mutaciones puntuales, inserciones y deleciones.
+
+### 04_visualizacion_y_reportes.ipynb
+Genera gráficos, tablas y reportes visuales basados en los análisis previos.
 
