@@ -1,1 +1,97 @@
 
+###############################################
+# Análisis de Secuencias – Cáncer de Pulmón
+# Autor: Darien Hernández Díaz
+# Descripción: Alineamiento y análisis básico 
+# de secuencias asociadas a genes del cáncer
+# de pulmón usando Bioconductor.
+###############################################
+
+# Instalar paquetes si no están instalados
+if(!require(Biostrings)) install.packages("BiocManager"); BiocManager::install("Biostrings")
+if(!require(seqinr)) install.packages("seqinr")
+
+library(Biostrings)
+library(seqinr)
+
+################################################
+# 1. Cargar secuencias en formato FASTA
+################################################
+
+# Cambia estas rutas por tus archivos
+seq1 <- readDNAStringSet("data/EGFR_wt.fasta")      # EGFR normal
+seq2 <- readDNAStringSet("data/EGFR_mut.fasta")     # EGFR mutado (ej. L858R)
+
+cat("Secuencias cargadas correctamente\n")
+print(names(seq1))
+print(names(seq2))
+
+################################################
+# 2. Inspección básica
+################################################
+
+cat("\nLongitudes:\n")
+cat("EGFR WT:", width(seq1), "\n")
+cat("EGFR MUT:", width(seq2), "\n")
+
+# Composición nucleotídica
+cat("\nComposición nucleotídica WT:\n")
+print(letterFrequency(seq1[[1]], letters = c("A", "C", "G", "T")))
+
+cat("\nComposición nucleotídica MUT:\n")
+print(letterFrequency(seq2[[1]], letters = c("A", "C", "G", "T")))
+
+# GC %
+gc_wt  <- letterFrequency(seq1[[1]], "GC", as.prob = TRUE)
+gc_mut <- letterFrequency(seq2[[1]], "GC", as.prob = TRUE)
+
+cat("\nGC % WT:", round(gc_wt*100, 2), "%\n")
+cat("GC % MUT:", round(gc_mut*100, 2), "%\n")
+
+################################################
+# 3. Alineamiento global (Needleman-Wunsch)
+################################################
+
+cat("\nRealizando alineamiento global...\n")
+aln_global <- pairwiseAlignment(seq1, seq2, substitutionMatrix = "EDNAFULL",
+                                gapOpening = -10, gapExtension = -1,
+                                type = "global")
+
+print(aln_global)
+
+################################################
+# 4. Alineamiento local (Smith-Waterman)
+################################################
+
+cat("\nRealizando alineamiento local...\n")
+aln_local <- pairwiseAlignment(seq1, seq2, substitutionMatrix = "EDNAFULL",
+                               gapOpening = -10, gapExtension = -1,
+                               type = "local")
+
+print(aln_local)
+
+################################################
+# 5. Identificar posiciones distintas
+################################################
+
+cat("\nComparando posiciones diferentes...\n")
+
+seq1_vec <- unlist(strsplit(as.character(seq1[[1]]), ""))
+seq2_vec <- unlist(strsplit(as.character(seq2[[1]]), ""))
+
+min_len <- min(length(seq1_vec), length(seq2_vec))
+
+diffs <- which(seq1_vec[1:min_len] != seq2_vec[1:min_len])
+
+cat("Número de diferencias encontradas:", length(diffs), "\n")
+cat("Posiciones diferentes:\n")
+print(diffs)
+
+################################################
+# 6. Guardar alineamiento en archivo
+################################################
+
+writePairwiseAlignments(aln_global, file="results/alineamiento_global.txt")
+writePairwiseAlignments(aln_local, file="results/alineamiento_local.txt")
+
+cat("\nArchivos guardados en carpeta /results\n")
