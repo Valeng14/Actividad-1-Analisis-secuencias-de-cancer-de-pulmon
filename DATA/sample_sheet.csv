@@ -1,0 +1,6 @@
+sample_id,patient_id,tissue_type,library_type,read_length
+TCGA-LUAD-0010,Patient_1,Tumor,RNA-Seq,101
+TCGA-LUAD-0020,Patient_2,Tumor,RNA-Seq,101
+TCGA-LUAD-0030,Patient_3,Tumor,RNA-Seq,101
+TCGA-LUAD-0040,Patient_4,Normal,RNA-Seq,101
+TCGA-LUAD-0050,Patient_5,Normal,RNA-Seq,101
