@@ -1,0 +1,6 @@
+TCGA-LUAD-0010_RNA_1.fastq.gz
+TCGA-LUAD-0010_RNA_2.fastq.gz
+TCGA-LUAD-0020_RNA_1.fastq.gz
+TCGA-LUAD-0020_RNA_2.fastq.gz
+TCGA-LUAD-0030_RNA_1.fastq.gz
+TCGA-LUAD-0030_RNA_2.fastq.gz
