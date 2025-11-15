@@ -28,9 +28,9 @@ Este proyecto utiliza datos simulados basados en el perfil de adenocarcinoma pul
 
 3. **Script:** incluye los scripts utilizados para realizar el procesamiento y análisis de las secuencias. Aquí se almacenan los archivos en R, Python u otros lenguajes que implementan los pasos principales del flujo de trabajo.
 
-4. Notebook/: agrupa los notebooks desarrollados para exploración, análisis interactivo y visualización. Estos pueden ser archivos RMarkdown o Jupyter Notebook donde se documenta y ejecuta el análisis de manera más detallada.
+4. **Notebook:** agrupa los notebooks desarrollados para exploración, análisis interactivo y visualización. Estos pueden ser archivos RMarkdown o Jupyter Notebook donde se documenta y ejecuta el análisis de manera más detallada.
 
-5. Results/: almacena los resultados generados a partir del análisis, como gráficos, tablas, reportes o cualquier archivo producido por los scripts o notebooks. Esta carpeta permite visualizar fácilmente los hallazgos del proyecto.
+5. **Results:** almacena los resultados generados a partir del análisis, como gráficos, tablas, reportes o cualquier archivo producido por los scripts o notebooks. Esta carpeta permite visualizar fácilmente los hallazgos del proyecto.
 
 ## Resultados Esperados
 - Lista de genes diferencialmente expresados
