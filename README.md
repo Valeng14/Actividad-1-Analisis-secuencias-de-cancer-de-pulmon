@@ -61,7 +61,7 @@ Los resultados son consistentes con hallazgos reportados en la literatura para a
 ## 👥 Contribuyentes
 - Luisa Michel Riascos Garcia
 - Darien Hernandez Díaz
-- Valentina Naecáez Gaitán 
+- Valentina Narváez Gaitán 
 
 ## 📚 Referencias
 - [TCGA Lung Adenocarcinoma Study - Nature 2014](https://www.nature.com/articles/nature11404)
