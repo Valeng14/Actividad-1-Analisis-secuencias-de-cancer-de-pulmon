@@ -18,7 +18,7 @@ Analizar secuencias asociadas al cáncer de pulmón para identificar patrones, v
 
 El repositorio está organizado en cuatro carpetas principales, cada una con un propósito específico dentro del análisis bioinformático de las secuencias de cáncer de pulmón:
 
-<dt>1. Data/: contiene todos los archivos de datos utilizados en el proyecto. Dentro de esta carpeta se encuentran los datos originales (por ejemplo, secuencias en formato FASTA) y los datos procesados que se generan durante el análisis.
+1. **Data**: contiene todos los archivos de datos utilizados en el proyecto. Dentro de esta carpeta se encuentran los datos originales (por ejemplo, secuencias en formato FASTA) y los datos procesados que se generan durante el análisis.
 Este proyecto utiliza datos simulados basados en el perfil de adenocarcinoma pulmonar de TCGA. Los archivos incluyen:
 
 - `sample_metadata.csv`: Información de muestras y pacientes
@@ -26,7 +26,7 @@ Este proyecto utiliza datos simulados basados en el perfil de adenocarcinoma pul
 - `differential_expression_results.csv`: Resultados de análisis DE simulados
 - `experimental_design.csv`: Diseño experimental simulado
 
-3. Script/: incluye los scripts utilizados para realizar el procesamiento y análisis de las secuencias. Aquí se almacenan los archivos en R, Python u otros lenguajes que implementan los pasos principales del flujo de trabajo.
+3. **Script:** incluye los scripts utilizados para realizar el procesamiento y análisis de las secuencias. Aquí se almacenan los archivos en R, Python u otros lenguajes que implementan los pasos principales del flujo de trabajo.
 
 4. Notebook/: agrupa los notebooks desarrollados para exploración, análisis interactivo y visualización. Estos pueden ser archivos RMarkdown o Jupyter Notebook donde se documenta y ejecuta el análisis de manera más detallada.
 
