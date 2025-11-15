@@ -18,7 +18,7 @@ Analizar secuencias asociadas al cáncer de pulmón para identificar patrones, v
 
 El repositorio está organizado en cuatro carpetas principales, cada una con un propósito específico dentro del análisis bioinformático de las secuencias de cáncer de pulmón:
 
-1. Data/: contiene todos los archivos de datos utilizados en el proyecto. Dentro de esta carpeta se encuentran los datos originales (por ejemplo, secuencias en formato FASTA) y los datos procesados que se generan durante el análisis.
+<dt>1. Data/: contiene todos los archivos de datos utilizados en el proyecto. Dentro de esta carpeta se encuentran los datos originales (por ejemplo, secuencias en formato FASTA) y los datos procesados que se generan durante el análisis.
 Este proyecto utiliza datos simulados basados en el perfil de adenocarcinoma pulmonar de TCGA. Los archivos incluyen:
 
 - `sample_metadata.csv`: Información de muestras y pacientes
