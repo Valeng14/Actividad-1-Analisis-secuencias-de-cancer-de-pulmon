@@ -60,7 +60,7 @@ Los resultados son consistentes con hallazgos reportados en la literatura para a
 
 ## 👥 Contribuyentes
 - Luisa Michel Riascos Garcia
-- Dariem Hernandez Díaz
+- Darien Hernandez Díaz
 - Valentina Naecáez Gaitán 
 
 ## 📚 Referencias
